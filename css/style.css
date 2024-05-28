@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.container {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#titulo {
+    font-size: 1.85rem;
+    position: relative;
+}
+
+#titulo::after {
+    position: absolute;
+    content: '';
+    background: #8f41c4;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8f41c4;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+input::-webkit-outter-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+label, input, button {
+    display: block;
+    margin: 10px auto;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    background: transparent;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4b2464;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 36px;
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #30153f;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.ui-datepicker {
+    background: #262626;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background: #333;
+    border-bottom: 1px solid #555;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    color: #fff;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+}
+
+.ui-datepicker th {
+    color: #fff;
+    padding: .7em;
+    background: #333;
+    border: 1px solid #555;
+}
+
+.ui-datepicker td {
+    border: 1px solid #555;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: .2em .3em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ui-datepicker td a:hover {
+    background: #555;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-current-day a {
+    background: #4b2464;
+    color: #fff;
+}
+
+.ui-datepicker-year {
+    display: none;
+}
+
+.hide-calendar-year .ui-datepicker-year {
+    display: none;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+}
